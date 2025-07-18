@@ -1,0 +1,139 @@
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import CardImg1 from '../Images/CardImg1.jpg'
+import iot from "../assets/iot.png"
+import computer from "../assets/computer.jpeg"
+import robot from "../assets/robot.png"
+import olymp from "../assets/olymp.png"
+import ai from "../assets/ai.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+const WhyUs = () => {
+  const [selectedCard, setSelectedCard] = useState(null)
+
+  return (
+    <div className='  m-2 mt-5 md:m-10 w-[95%] rounded-xl pb-20 relative'>
+      <h1 className='pt-10 text-center text-[4vw] fira-sans-bold'>What areas we work</h1>
+      <h3 className='mt-[1vh] pr-10 pl-10 md:pr-40 md:pl-40 fira-sans-regular text-2xl text-zinc-800 text-center'>We are at the forefront of innovation, working in fields that are rapidly changing the world. We connect devices to the internet of things (IoT), allowing them to share data and automate tasks. Our engineers design and build robots that mimic human actions or assist us in various ways. We create intelligent machines through artificial intelligence (AI), enabling them to learn, solve problems, and make decisions. Finally, we write the code, the language that unlocks the potential of computers, and allows us to build the technologies that shape our digital world.</h3>
+      <div className='flex justify-center'>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          className='w-full max-w-[1200px]'
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+        >
+          <SwiperSlide className='flex justify-center'>
+            <motion.div
+              whileHover={{ backgroundColor:"#f1f1f1" }} transition={{ duration: '.4' }}
+              className="h-[450px] mt-4 rounded-xl border-2 border-black w-[300px] md:w-[400px] bg-secondary cursor-pointer relative overflow-hidden"
+              onClick={() => setSelectedCard({ id: 1, type: 'secondary', content: "This is what I wanted to share with everyone for card 1" })}
+            >
+              <div className='justify-center flex items-center rounded-md'><img className='-mt-20' src={iot} alt="" /></div>
+              <h1 className='mt-[-4vh] overflow-hidden justify-center text-center text-xl fira-sans-bold'>IOT</h1>
+              <h1 className='m-3  fira-sans-medium'>IoT, or the Internet of Things, is basically a network of everyday objects equipped with sensors and software that connect and exchange data with each other. Imagine your thermostat adjusting based on your phone's location.
+</h1>
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide className='flex justify-center'>
+            <motion.div
+              whileHover={{ backgroundColor:"#f1f1f1" }} transition={{ duration: '.4' }}
+              className="h-[450px] mt-4 rounded-xl border-2 border-black w-[300px] md:w-[400px] bg-secondary cursor-pointer relative overflow-hidden"
+              onClick={() => setSelectedCard({ id: 2, type: 'accent', content: "This is what I wanted to share with everyone for card 2" })}
+            >
+              <div className='justify-center flex items-center rounded-md'><img className='aspect-square w-[200px]' src={robot} alt="" /></div>
+              <h1 className='mt-[5vh] overflow-hidden justify-center text-center text-xl fira-sans-bold'>Robotic's</h1>
+              <h1 className='m-3 fira-sans-medium'>Robotics is the engineering field that deals with designing, building, and using robots. It combines a bunch of different disciplines like:<ul>
+                <li>Mechanical Engineering</li>
+                <li>Computer Engineering</li>
+                <li>Electrical Engineering</li>
+                </ul></h1>
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide className='flex justify-center'>
+            <motion.div
+              whileHover={{ backgroundColor:"#f1f1f1" }} transition={{ duration: '.4' }}
+              className="h-[450px] mt-4 rounded-xl border-2 border-black w-[300px] md:w-[400px] bg-secondary cursor-pointer relative overflow-hidden"
+              onClick={() => setSelectedCard({ id: 3, type: 'secondary', content: "This is what I wanted to share with everyone for card 3" })}
+            >
+              <div className='justify-center flex items-center rounded-md'><img className='w-[300px]' src={ai} alt="" /></div>
+              <h1 className='mt-[5vh] overflow-hidden justify-center text-center text-xl fira-sans-bold'>Artificial Intelligence</h1>
+              <h1 className='m-3 fira-sans-medium'>Artificial intelligence (AI) is a branch of computer science that's focused on creating intelligent machinesAI is a rapidly evolving field with the potential to revolutionize many aspects of our lives. </h1>
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide className='flex justify-center'>
+            <motion.div
+              whileHover={{ backgroundColor:"#f1f1f1" }} transition={{ duration: '.4' }}
+              className="h-[450px] mt-4 rounded-xl border-2 border-black w-[300px] md:w-[400px] bg-secondary cursor-pointer relative overflow-hidden"
+              onClick={() => setSelectedCard({ id: 4, type: 'white', content: "This is what I wanted to share with everyone for card 3" })}
+            >
+              <div className='justify-center flex items-center rounded-md'><img className='w-[200px]' src={computer} alt="" /></div>
+              <h1 className='mt-[5vh] overflow-hidden justify-center text-center text-xl fira-sans-bold'>Computer and Coding</h1>
+              <h1 className='m-3 fira-sans-medium'>This is the process of writing instructions for computers to understand. Coders use programming languages, which are sets of rules and symbols that tell the computer what to do step-by-step.</h1>
+            </motion.div>
+          </SwiperSlide>
+          <SwiperSlide className='flex justify-center'>
+            <motion.div
+              whileHover={{ backgroundColor:"#f1f1f1" }} transition={{ duration: '.4' }}
+              className="h-[450px] mt-4 rounded-xl border-2 border-black w-[300px] md:w-[400px] bg-secondary cursor-pointer relative overflow-hidden"
+              onClick={() => setSelectedCard({ id: 5, type: 'secondary', content: "This is what I wanted to share with everyone for card 3" })}
+            >
+              <div className='justify-center flex items-center rounded-md'><img className='w-[300px]' src={olymp} alt="" /></div>
+              <h1 className='mt-[5vh] overflow-hidden justify-center text-center text-xl fira-sans-bold'>Olympiads</h1>
+              <h1 className='m-3 fira-sans-medium'>Olympiads are international competitive examinations or contests in various subjects or fields</h1>
+            </motion.div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <AnimatePresence>
+        {selectedCard && (
+          <motion.div
+            className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className={`bg-background p-8 rounded-xl shadow-lg shadow-black`}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0 }}
+            >
+              <h1>Complete details about card {selectedCard.id}</h1>
+              <h1>{selectedCard.content}</h1>
+              <button onClick={() => setSelectedCard(null)}>Close</button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  )
+}
+
+export default WhyUs;

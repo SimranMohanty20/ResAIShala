@@ -1,0 +1,462 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fira-sans-thin {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.fira-sans-extralight {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-thin-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.fira-sans-extralight-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.fira-sans-light-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+  
+#nav{
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.h-effect:after{
+  content: "";
+  text-decoration: none;
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+  padding: 0,7px;
+  transition: 0.3s;
+}
+
+.h-effect:hover:after{
+  width:100%;
+}
+
+#quest{
+  font-size: 400px;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+
+
+.container {
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .md\\:hidden {
+    display: none;
+  }
+  .md\\:flex {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .md\\:hidden {
+    display: block;
+  }
+  .md\\:flex {
+    display: none;
+  }
+}
+
+.fixed {
+  position: fixed;
+  z-index: 50;
+
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transform {
+  transform: translateX(0);
+}
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+.robot-cont {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.eye-container {
+    position: relative;
+    top: 0;
+}
+
+#svg_1{
+  scale: 40%;
+}
+
+#r1{
+  stroke-width: 20px;
+}
+
+.cont-F .tittle h1::after{ 
+content: "";
+height: 5px;
+width:300px;
+background-color: #000;
+z-index: 1;
+border-radius: 25px;
+display: block;
+margin : auto;
+}
+
+.cont-F .socials i{
+font-size: 22px;
+height: 45px;
+width :45px;
+border-radius: 50%;
+Line-height: 45px;
+text-align: center;
+background-color: #f28f92;
+margin:0px 10px;
+}
+
+.cont-F .socials i:hover{
+  color: #fff;
+  background-color: #000;
+  transition: 1s ease;
+  transform: rotate(360);
+}
+
+@media screen and (max-width: 768px){
+.cont-F{
+width : 80%;
+display: block;
+margin : auto;
+}
+.content{
+float : none;
+width : 100%;
+display: block;
+margin : auto;
+}
+.image-sec{
+  float: none;
+  width : 100%;
+  margin-top: 50px;
+}
+.image-sec img{
+  width : 100%;
+  height: auto;
+  display: block;
+  margin : auto;
+  }
+  .cont-F .tittle h1{
+  text-align: center;
+  font-size: 30px;
+  }
+
+  .cont-F .socials i{
+    font-size: 19px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+}
+
+
+.btt {
+  position: relative;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btt:hover {
+  color: #fff;
+}
+
+.btt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: black;
+  z-index: -1;
+  transition: height 0.8s;
+  border-radius: 0 0 50% 50%;
+}
+
+.btt:hover::before {
+  height: 180%;
+}
+
+
+.btt1 {
+  position: relative;
+  color: #fafafa;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: rgb(147, 110, 226);
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btt1:hover {
+  color: #fff;
+}
+
+.btt1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(113, 70, 204);
+  z-index: -1;
+  transition: height 0.8s;
+  border-radius: 0 0 50% 50%;
+}
+
+.btt1:hover::before {
+  height: 180%;
+}
+
+.btt2 {
+  position: relative;
+  color: #fafafa;
+  font-size: 16px;
+  padding: 5px 20px;
+  background-color: rgb(147, 110, 226);
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btt2:hover {
+  color: #fff;
+}
+
+.btt2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(113, 70, 204);
+  z-index: -1;
+  transition: height 0.8s;
+  border-radius: 0 0 50% 50%;
+}
+
+.btt2:hover::before {
+  height: 180%;
+}
+
+
+
+.wrapper-1{
+  mask-image: linear-gradient(
+    to right,
+    rgba(230,146,248,1)0%,
+    rgba(255,255,255,1) 100%
+  );
+}
+/* 
+  background: rgb(230,146,248);
+background: linear-gradient(90deg, rgba(230,146,248,1) 0%, rgba(255,255,255,1) 100%); */
+
+
+@media (max-width: 640px) {
+  .item {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .item {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1025px) {
+  .item {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777; /* or any text color you prefer */
+}
