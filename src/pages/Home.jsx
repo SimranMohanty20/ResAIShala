@@ -26,21 +26,25 @@ const Home = () => {
       <Navbar />
 
       {/* ✅ START of moving sentence (scrolling text banner) */}
-      <div style={{
-        backgroundColor: '#f5f5f7', // soft neutral that pairs well with purple
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        padding: '8px 0',
-        fontWeight: 'normal',
-        fontSize: '16px',
-        color: '#4b3869', // plum-toned dark gray for harmony with purple
-        borderBottom: '1px solid #ddd'
-      }}>
-        <div style={{
-          display: 'inline-block',
-          animation: 'marquee 15s linear infinite'
-        }}>
-          What we do at ResAIShala: We assist in writing research papers, offer copyright and 
+      <div
+        style={{
+          backgroundColor: '#f5f5f7', // soft neutral that pairs well with purple
+          overflow: 'hidden',
+          whiteSpace: 'nowrap',
+          padding: '8px 0',
+          fontWeight: 'normal',
+          fontSize: '16px',
+          color: '#4b3869', // plum-toned dark gray for harmony with purple
+          borderBottom: '1px solid #ddd'
+        }}
+      >
+        <div
+          style={{
+            display: 'inline-block',
+            animation: 'marquee 30s linear infinite' // ⬅️ slowed down from 15s to 30s
+          }}
+        >
+          What we do at ResAIShala: We assist in writing research papers, offer copyright and
           patent support, and take on projects at local, global, government, and private levels.
         </div>
       </div>
