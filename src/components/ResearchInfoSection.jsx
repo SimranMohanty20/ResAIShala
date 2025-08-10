@@ -27,7 +27,7 @@ const ResearchInfoSection = () => {
     img: 'https://img.icons8.com/color/96/000000/engineering.png'
   },
   {
-    title: 'PhD Consultation',
+    title: 'Research Consultation',
     desc: 'Assistance for scholars in thesis writing, proposal, and viva support.',
     img: 'https://img.icons8.com/color/96/000000/graduation-cap.png'
   },

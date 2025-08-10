@@ -20,8 +20,11 @@ const Career = () => {
 
       {/* Header Section */}
       <div className="text-center py-16 relative z-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 mb-4">
-          🚀 Career @ ResAiShala
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          🚀 Career @{' '}
+          <span style={{ color: '#228B22' }}>Res</span>
+          <span style={{ color: '#f6ac92' }}>AI</span>
+          <span style={{ color: '#a63892' }}>Shala</span>
         </h1>
         <p className="text-gray-600 max-w-xl mx-auto text-lg mb-10">
           Explore roles, redefine innovation, and grow with a purpose. Your next opportunity starts here.

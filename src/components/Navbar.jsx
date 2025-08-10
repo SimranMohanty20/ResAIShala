@@ -18,7 +18,7 @@ const Navbar = () => {
     { path: "/about", label: "About" },
     { path: "/research-guide", label: "Research Guide" },
     { path: "/carrer", label: "Careers" },
-    { path: "/page2", label: "Innovation Hub" },
+    { path: "/page2", label: "AI for Education" },
   ];
 
   const moreMenu = [

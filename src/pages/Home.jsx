@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import PreLoader from '../components/PreLoader.jsx';
 import ResearchInfoSection from '../components/ResearchInfoSection';
 
 const Home = () => {
-  const [showPreloader, setShowPreloader] = useState(true);
-
-  useEffect(() => {
-    const hasPreloaderShown = localStorage.getItem('hasPreloaderShown');
-    if (hasPreloaderShown) {
-      setShowPreloader(false);
-    } else {
-      setShowPreloader(true);
-      localStorage.setItem('hasPreloaderShown', 'true');
-    }
-  }, []);
-
   return (
     <div className='total-ref'>
-      {showPreloader && <PreLoader />}
-
       {/* ✅ Header/Navbar */}
       <Navbar />
 
